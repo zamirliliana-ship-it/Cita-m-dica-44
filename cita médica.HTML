@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+_  <title>Agendar Cita</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    .container {
+      background-color: #fff8dc; /* Amarillo muy claro */
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    h1 {
+      color: red;
+      font-size: 24px;
+      margin: 0 0 20px 0;
+    }
+    .top-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-align: center;
+    }
+    .top-right a {
+      color: red;
+      font-size: 14px;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .perfil-icon {
+      background-color: pink;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .perfil-icon span {
+      font-size: 24px;
+      color: white;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      background-color: yellow;
+      border: none;
+      color: red;
+      font-weight: bold;
+    }
+    .btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: red;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-right">
+      <a href="#">Ver Historial</a>
+      <div class="perfil-icon">
+        <span>👤</span>
+      </div>
+      <div>Perfil</div>
+    </div>
+
+    <h1>Agendar Cita</h1>
+
+    <label for="fecha">Fecha</label>
+    <input type="text" id="fecha" placeholder="Selecciona una fecha">
+
+    <label for="hora">Hora</label>
+    <input type="text" id="hora" placeholder="Selecciona una hora">
+
+    <button class="btn">Reservar</button>
+  </div>
+</body>
+</html>
